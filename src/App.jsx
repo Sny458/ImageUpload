@@ -12,7 +12,7 @@ function App() {
       <div style={{ textAlign: "center", marginTop: "20px" }}>
         <h2>Choose Upload Type</h2>
         {!uploadType && (
-          <div>
+          <div className='UploadSelect56'>
             <button onClick={() => setUploadType("image")}>Upload Single Image</button>
             <button onClick={() => setUploadType("video")}>Upload Video</button>
             <button onClick={() => setUploadType("multipleImage")}>Upload Multiple Images</button>

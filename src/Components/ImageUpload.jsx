@@ -36,7 +36,7 @@ const ImageUploader = () => {
     <div style={{ textAlign: "center", marginTop: "20px" }}>
       <h2>Image Uploader</h2>
       <input type="file" accept="image/*" onChange={handleFileChange} />
-      <button onClick={uploadAndProcessImage} disabled={!selectedImage}>
+      <button onClick={uploadAndProcessImage} disabled={!selectedImage} style={{ backgroundColor: "blue", color: "white", padding: "10px", margin: "10px" }}>
         Upload & Process
       </button>
       {loading && <p>Processing...</p>}
@@ -46,7 +46,7 @@ const ImageUploader = () => {
           <img src={processedImage} alt="Processed" style={{ width: "300px", marginTop: "10px" }} />
           <br />
           <a href={processedImage} download="processed-image.jpg">
-            <button>Download</button>
+            <button style={{ backgroundColor: "blue", color: "white", padding: "10px", margin: "10px" }}>Download</button>
           </a>
         </div>
       )}
